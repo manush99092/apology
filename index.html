@@ -1,0 +1,116 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>A Little Apology 💗</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="floating-hearts" aria-hidden="true">♡　♥　♡　♥　♡</div>
+
+  <main class="app">
+
+    <!-- PAGE 1 -->
+    <section class="page active" id="page1">
+      <div class="art pink">
+        <div class="decor-hearts">♥　♥</div>
+        <div class="character">🐰</div>
+        <div class="flowers">✿　❀</div>
+      </div>
+      <h1>Hey Srushhti</h1>
+      <p>Can we talk for a moment? There's something important I want to tell you.</p>
+      <button class="main-btn" data-next="page2">Continue ♥</button>
+    </section>
+
+    <!-- PAGE 2 -->
+    <section class="page" id="page2">
+      <div class="art lavender">
+        <div class="decor-hearts">♥　♥</div>
+        <div class="character">😿</div>
+      </div>
+      <p class="message">I know I hurt you... and I've been feeling bad about it.</p>
+      <button class="main-btn lavender-btn" data-next="page3">Next →</button>
+    </section>
+
+    <!-- PAGE 3 -->
+    <section class="page" id="page3">
+      <h2>Little things I want to tell you...</h2>
+      <p class="subtext">Tap each one 💗</p>
+
+
+      <div class="message-list">
+        <button class="message-card peach" data-message="I messed up... and I'm really sorry for that.">
+          I'm truly sorry 😔
+        </button>
+        <button class="message-card pink-card" data-message="I promise I'll try to do better, not just say it.">
+          I'll try to do better 💔
+        </button>
+        <button class="message-card purple-card" data-message="Please forgive me... You mean so much to me.">
+          Please forgive me 🥺
+        </button>
+      </div>
+
+      <p class="reveal-text" id="message-reveal" aria-live="polite"></p>
+      <button class="main-btn" data-next="page4">My message →</button>
+    </section>
+
+    <!-- PAGE 4 -->
+    <section class="page" id="page4">
+      <h2>From my heart...</h2>
+
+      <div class="couple-icons">
+        <div class="mini-character">😔<span>💔</span></div>
+      </div>
+
+      <button class="letter-trigger" id="open-letter" aria-expanded="false">
+        <span id="letter-instruction">↓ Tap to see message ↓</span>
+        <strong>I'm Sorry ♡</strong>
+      </button>
+
+      <article class="letter-content" id="letter-content" hidden>
+        <h2>I'm Sorry</h2>
+        <p>
+          For hurting you and making you feel upset, I'm truly sorry.
+          I never wanted to be the reason behind your tears or your silence.
+          You matter to me more than I always manage to show, and I hate
+          that I let you down. I promise to grow, to listen, and to be
+          better for you every single day. Thank you for being special to me.
+        </p>
+        <div class="letter-flowers">🌷 🌸 🌿</div>
+      </article>
+
+      <button class="main-btn navratri-next" data-next="page5">One last thing... 💗</button>
+    </section>
+
+    <!-- PAGE 5: NAVRATRI INVITATION -->
+    <section class="page navratri-page" id="page5">
+      <div class="navratri-overlay"></div>
+
+      <div class="invitation">
+        <h1> Ek Chelli Vaat ❤️</h1>
+        <div class="festival-emojis">💃🏻　🪔　🕺🏻</div>
+        <p class="question">Please mari jode Navratri karis?</p>
+
+        <div class="answer-buttons">
+          <button id="yes-btn" class="yes-btn">YES! ❤️</button>
+          <button id="no-btn" class="no-btn">No 🙈</button>
+        </div>
+
+        <p class="hint" id="hint">Think again... 🥺💗</p>
+
+        <div id="celebration" class="celebration" hidden>
+          <h2>Yayyyyy! ❤️🎉</h2>
+          <p>💃🏻🕺🏻</p>
+          <div class="celebration-emojis">🪔 🌸 ❤️ 🌼 🪔</div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
